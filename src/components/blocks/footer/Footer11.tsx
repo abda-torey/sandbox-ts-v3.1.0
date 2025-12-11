@@ -1,3 +1,5 @@
+"use client";
+import { useState, useEffect } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import SocialLinks from "components/reuseable/SocialLinks";
 import NextLink from "components/reuseable/links/NextLink";
@@ -5,16 +7,39 @@ import NextLink from "components/reuseable/links/NextLink";
 import footerNav from "data/footer";
 
 export default function Footer11() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Set initial value
+    setIsMobile(window.innerWidth < 768);
+
+    // Update on resize
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <footer className="bg-light">
       <div className="container pb-13 pb-md-15">
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <img className="mb-4" src="/img/logo-dark.png" srcSet="/img/logo-dark@2x.png 2x" alt="" />
+              <img
+                alt="logo"
+                srcSet="/img/footerlogoblue.png"
+                style={{
+                  height: isMobile ? "18px" : "25px",
+                  width: "auto",
+                  objectFit: "contain",
+                }}
+              />
 
-              <p className="mb-4">
-                © 2022 Sandbox. <br className="d-none d-lg-block" />
+              <p className="mb-4 mt-4">
+                © 2020 BluePeakData. <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
 
@@ -25,9 +50,14 @@ export default function Footer11() {
           <div className="col-md-4 col-lg-3">
             <div className="widget">
               <h4 className="widget-title mb-3">Get in Touch</h4>
-              <address className="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
-              <NextLink title="info@email.com" href="mailto:#" className="link-body" />
-              <br /> 00 (123) 456 78 90
+              <address className="pe-xl-15 pe-xxl-17">
+                1920 McKinney Ave, Dallas, TX 75201, United States
+              </address>
+              <NextLink
+                title="info@bluepeakdata.com"
+                href="mailto:#"
+                className="link-body"
+              />
             </div>
           </div>
 
@@ -46,52 +76,17 @@ export default function Footer11() {
 
           <div className="col-md-12 col-lg-3">
             <div className="widget">
-              <h4 className="widget-title mb-3">Our Newsletter</h4>
-              <p className="mb-5">Subscribe to our newsletter to get our news &amp; deals delivered to you.</p>
+              <h4 className="widget-title mb-3">Work With Us</h4>
+              <p className="mb-5">
+                Ready to transform your data into business insights? Let's talk
+                about your project.
+              </p>
 
-              <div className="newsletter-wrapper">
-                <div id="mc_embed_signup2">
-                  <form
-                    method="post"
-                    target="_blank"
-                    className="validate dark-fields"
-                    id="mc-embedded-subscribe-form2"
-                    name="mc-embedded-subscribe-form"
-                    action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a">
-                    <div id="mc_embed_signup_scroll2">
-                      <div className="mc-field-group input-group form-floating">
-                        <input
-                          type="email"
-                          name="EMAIL"
-                          id="mce-EMAIL2"
-                          placeholder="Email Address"
-                          className="required email form-control"
-                        />
-
-                        <label htmlFor="mce-EMAIL2">Email Address</label>
-                        <input
-                          value="Join"
-                          type="submit"
-                          name="subscribe"
-                          id="mc-embedded-subscribe2"
-                          className="btn btn-primary btn-gradient gradient-1"
-                        />
-                      </div>
-
-                      <div id="mce-responses2" className="clear">
-                        <div className="response" id="mce-error-response2" style={{ display: "none" }} />
-                        <div className="response" id="mce-success-response2" style={{ display: "none" }} />
-                      </div>
-
-                      <div style={{ position: "absolute", left: "-5000px" }} aria-hidden="true">
-                        <input type="text" tabIndex={-1} name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" />
-                      </div>
-
-                      <div className="clear" />
-                    </div>
-                  </form>
-                </div>
-              </div>
+              <NextLink
+                title="Request a Consultation"
+                href="/#contact"
+                className="btn btn-primary btn-gradient gradient-1"
+              />
             </div>
           </div>
         </div>

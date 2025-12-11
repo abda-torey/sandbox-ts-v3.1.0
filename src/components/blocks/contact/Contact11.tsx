@@ -1,6 +1,6 @@
 export default function Contact11() {
   return (
-    <div className="row gx-3 gy-10 mb-15 mb-md-18 align-items-center">
+    <div className="row gx-3 gy-10 mb-15 mt-15 mb-md-18 align-items-center" id="contact">
       <div className="col-lg-6">
         <figure>
           <img
@@ -35,11 +35,11 @@ export default function Contact11() {
 
           <div>
             <h5 className="mb-0">Address</h5>
-            <address>Moonshine St. 14/05 Light City, London</address>
+            <address>1920 McKinney Ave, Dallas, TX 75201, United States</address>
           </div>
         </div>
 
-        <div className="d-flex flex-row">
+        {/* <div className="d-flex flex-row">
           <div>
             <svg
               viewBox="0 0 256.01 256"
@@ -60,7 +60,7 @@ export default function Contact11() {
             <h5 className="mb-0">Phone</h5>
             <p>00 (123) 456 78 90</p>
           </div>
-        </div>
+        </div> */}
 
         <div className="d-flex flex-row">
           <div>
@@ -84,7 +84,7 @@ export default function Contact11() {
             <h5 className="mb-0">E-mail</h5>
             <p className="mb-0">
               <a href="mailto:sandbox@email.com" className="link-body">
-                sandbox@email.com
+                info@bluepeakdata.com
               </a>
             </p>
           </div>

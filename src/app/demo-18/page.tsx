@@ -57,8 +57,7 @@ export default function Demo18() {
           </div>
         </section>
 
-        {/* ========== call to action section ========== */}
-        <CTA7 />
+        
       </main>
 
       {/* ========== footer section ========== */}

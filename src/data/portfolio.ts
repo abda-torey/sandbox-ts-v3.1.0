@@ -132,44 +132,36 @@ export const portfolioList5 = [
 export const portfolioList6 = [
   {
     id: 1,
-    category: 'Stationary',
-    link: '/single-project-1',
-    title: 'Cras Fermentum Sem',
-    image: '/img/photos/pd7.jpg',
-    fullImage: '/img/photos/pd7-full.jpg'
+    category: 'Retail Analytics',
+    link: '/single-project-2',
+    date: '2024',
+    image: '/img/photos/myb4.jpg',
+    title: 'Sales Forecasting Dashboard for a Major U.S. Retailer',
+    fullImage: '/img/photos/myb4.jpg',
+    description:
+      'Designed and deployed Power BI dashboards integrating Azure Synapse data pipelines to enhance sales forecasting accuracy and performance insights.',
   },
+    
   {
     id: 2,
-    link: '/single-project-1',
-    category: 'Magazine, Book',
-    title: 'Mollis Ipsum Mattis',
-    image: '/img/photos/pd8.jpg',
-    fullImage: '/img/photos/pd8-full.jpg'
+    category: 'Healthcare Data Integration',
+    link: '/single-project-3',
+    image: '/img/photos/datawarehousemodernization.jpg',
+    fullImage: '/img/photos/full-datawarehousemodernization.jpg',
+    title: 'Data Warehouse Modernization for a Healthcare Tech Company',
+    description:
+      'Migrated legacy SQL Server data flows to Azure Data Factory and optimized ETL processes, improving data availability for analytics and reporting.',
   },
   {
     id: 3,
-    category: 'Packaging',
+    category: 'Supply Chain Optimization',
     link: '/single-project-1',
-    title: 'Ipsum Ultricies Cursus',
-    image: '/img/photos/pd9.jpg',
-    fullImage: '/img/photos/pd9-full.jpg'
+    image: '/img/photos/pipeline2.jpg',
+    title: 'Supply Chain Insights Platform for a Global Distributor',
+    fullImage: '/img/photos/pipeline2.jpg',
+    description:
+      'Developed an end-to-end data solution integrating Power BI, Azure Data Lake, and Data Factory to monitor logistics KPIs and delivery performance.',
   },
-  {
-    id: 4,
-    link: '/single-project-1',
-    image: '/img/photos/pd10.jpg',
-    category: 'Stationary, Branding',
-    title: 'Inceptos Euismod Egestas',
-    fullImage: '/img/photos/pd10-full.jpg'
-  },
-  {
-    id: 5,
-    category: 'Packaging',
-    link: '/single-project-1',
-    image: '/img/photos/pd11.jpg',
-    title: 'Ipsum Mollis Vulputate',
-    fullImage: '/img/photos/pd11-full.jpg'
-  }
 ];
 
 const projects = [
