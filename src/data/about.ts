@@ -8,8 +8,14 @@ import Headphone from 'icons/solid-mono/Headphone';
 
 // used in the about-2, about-8, about-11, about-13, about-15, about-17 block
 export const aboutList1 = [
-  ['Aenean quam ornare. Curabitur blandit.', 'Nullam quis risus eget urna mollis ornare.'],
-  ['Etiam porta euismod malesuada mollis.', 'Vivamus sagittis lacus vel augue rutrum.']
+  [
+    'End-to-end Microsoft Azure data solutions',
+    'Interactive Power BI dashboards for business insights',
+  ],
+  [
+    'Data governance and compliance frameworks',
+    'Seamless cloud migration and optimization',
+  ],
 ];
 
 // used in the about-6, about-19 block

@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 // CUSTOM DATA
-import { serviceList10 } from "data/service";
+import { serviceList8 } from "data/service";
 
 export default function Services20() {
   return (
@@ -13,7 +13,7 @@ export default function Services20() {
       </div>
 
       <div className="row gy-8 mb-17">
-        {serviceList10.map(({ id, title, description, Icon }) => (
+        {serviceList8.map(({ id, title, description, Icon }) => (
           <div className="col-md-6 col-lg-4" key={id}>
             <div className="d-flex flex-row">
               <div>

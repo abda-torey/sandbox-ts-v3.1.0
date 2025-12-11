@@ -11,6 +11,7 @@ import { CTA7 } from "components/blocks/call-to-action";
 import { Testimonial15 } from "components/blocks/testimonial";
 import { About17, About18, About19 } from "components/blocks/about";
 import NavbarLanding from "components/blocks/navbar/navbar-1/navbarLanding";
+import { Portfolio10 } from "components/blocks/portfolio";
 export default function Demo18() {
   return (
     <Fragment>
@@ -39,17 +40,17 @@ export default function Demo18() {
 
         <section className="wrapper bg-light">
           {/* ========== facts section ========== */}
-          <Facts12 />
+          {/* <Facts12 /> */}
 
           <div className="container">
             {/* ========== testimonial section ========== */}
-            <Testimonial15 />
+            {/* <Testimonial15 /> */}
 
             {/* ========== case study section ========== */}
-            <Blog4 />
+            {/* <Blog4 /> */}
 
             {/* ========== who are we section ========== */}
-            <About19 />
+            <Portfolio10 />
 
             {/* ========== contact section ========== */}
             <Contact11 />

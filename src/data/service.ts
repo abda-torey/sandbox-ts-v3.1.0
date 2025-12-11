@@ -29,6 +29,7 @@ import SettingsThree from 'icons/lineal/SettingsThree';
 import CloudComputing from 'icons/lineal/CloudComputing';
 import { LinkType } from 'types/demo-1';
 import color from 'utils/color';
+import { Database, BarChart3, Cloud, ShieldCheck, Users } from "lucide-react";
 
 // used in the services-1 block
 export const serviceList1 = [
@@ -270,27 +271,51 @@ export const serviceList7 = [
 export const serviceList8 = [
   {
     id: 1,
-    Icon: Browser,
-    title: 'Web Design',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`
+    Icon: Database,
+    color: "#2563EB", // blue
+    title: "Data Engineering & Integration",
+    description:
+      "Designing robust data pipelines and ETL workflows using Azure Data Factory, SQL Server Integration Services, and Power BI Dataflows."
   },
   {
     id: 2,
-    Icon: SmartphoneTwo,
-    title: 'Mobile Design',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`
+    Icon: BarChart3,
+    color: "#F59E0B", // amber
+    title: "Data Visualization & Analytics",
+    description:
+      "Creating interactive dashboards and reports in Power BI to uncover insights, trends, and business performance metrics."
   },
   {
     id: 3,
-    Icon: SettingsThree,
-    title: 'Development',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`
+    Icon: Cloud,
+    color: "#06B6D4", // cyan
+    title: "Cloud Migration & Modernization",
+    description:
+      "Helping organizations migrate legacy data systems to secure, scalable Azure cloud environments with minimal disruption."
   },
   {
     id: 4,
-    title: 'SEO',
-    Icon: SearchTwo,
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`
+    Icon: Settings,
+    color: "#10B981", // emerald
+    title: "Data Governance & Quality",
+    description:
+      "Implementing data governance frameworks, cleansing processes, and access controls to ensure trusted and compliant data assets."
+  },
+  {
+    id: 5,
+    Icon: ShieldCheck,
+    color: "#EC4899", // pink
+    title: "Security & Compliance",
+    description:
+      "Ensuring data protection, privacy, and compliance across Microsoft Azure, Power BI, and enterprise data platforms."
+  },
+  {
+    id: 6,
+    Icon: Team,
+    color: "#8B5CF6", // violet
+    title: "Consulting & Training",
+    description:
+      "Providing expert guidance, workshops, and staff enablement on data strategy, Microsoft Fabric, Databricks, and analytics best practices."
   }
 ];
 
