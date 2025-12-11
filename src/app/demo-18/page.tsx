@@ -10,13 +10,13 @@ import { Services20 } from "components/blocks/services";
 import { CTA7 } from "components/blocks/call-to-action";
 import { Testimonial15 } from "components/blocks/testimonial";
 import { About17, About18, About19 } from "components/blocks/about";
-
+import NavbarLanding from "components/blocks/navbar/navbar-1/navbarLanding";
 export default function Demo18() {
   return (
     <Fragment>
       {/* ========== header ========== */}
       <header className="wrapper">
-        <Navbar social navClassName="navbar navbar-expand-lg center-nav transparent navbar-light caret-none" />
+        <NavbarLanding navClassName="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none"/>
       </header>
 
       {/* ========== main content ========== */}
