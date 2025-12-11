@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
-import { Footer8 } from "components/blocks/footer";
-import Navbar from "components/blocks/navbar/navbar-1";
-import { Portfolio1 } from "components/blocks/portfolio";
+import { Footer11 } from "components/blocks/footer";
+import NavbarLanding from "components/blocks/navbar/navbar-1/navbarLanding";
+// import { Portfolio1 } from "components/blocks/portfolio";
 import NextLink from "components/reuseable/links/NextLink";
 import ProjectDetailsContent from "components/common/ProjectDetailsContent";
 import ProjectDetailsNavigation from "components/common/ProjectDetailsNavigation";
@@ -12,13 +12,9 @@ export default function ProjectDetails() {
     <Fragment>
       {/* ========== header section ========== */}
       <header className="wrapper bg-soft-primary">
-        <Navbar
-          language
-          stickyBox={false}
-          logoAlt="logo-light"
-          navClassName="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark"
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-white rounded-pill" />}
-        />
+        <NavbarLanding
+          navClassName="navbar navbar-expand-lg center-nav navbar-light navbar-bg-light"
+        />  
       </header>
 
       <main className="content-wrapper">
@@ -51,7 +47,7 @@ export default function ProjectDetails() {
           </div>
 
           {/* ========== portfolio section ========== */}
-          <Portfolio1 />
+          {/* <Portfolio1 /> */}
         </section>
 
         {/* ========== navigation section ========== */}
@@ -59,7 +55,7 @@ export default function ProjectDetails() {
       </main>
 
       {/* ========== footer section ========== */}
-      <Footer8 />
+      <Footer11 />
     </Fragment>
   );
 }

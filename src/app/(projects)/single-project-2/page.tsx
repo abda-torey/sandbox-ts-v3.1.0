@@ -1,22 +1,21 @@
 import Image from "next/image";
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
-import Navbar from "components/blocks/navbar/navbar-1";
-import { Footer8 } from "components/blocks/footer";
+import { Footer11 } from "components/blocks/footer";
 import Carousel from "components/reuseable/Carousel";
 import NextLink from "components/reuseable/links/NextLink";
 import ProjectDetailsContent from "components/common/ProjectDetailsContent";
 import ProjectDetailsNavigation from "components/common/ProjectDetailsNavigation";
+import NavbarLanding from "components/blocks/navbar/navbar-1/navbarLanding";
 
 export default function ProjectDetails() {
   return (
     <Fragment>
       {/* ========== header section ========== */}
       <header className="wrapper bg-light">
-        <Navbar
-          language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
-        />
+        <NavbarLanding
+          navClassName="navbar navbar-expand-lg center-nav navbar-light navbar-bg-light"
+        />  
       </header>
 
       <main className="content-wrapper">
@@ -92,7 +91,7 @@ export default function ProjectDetails() {
       </main>
 
       {/* ========== footer section ========== */}
-      <Footer8 />
+      <Footer11 />
     </Fragment>
   );
 }

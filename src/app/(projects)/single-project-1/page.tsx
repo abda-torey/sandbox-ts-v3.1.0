@@ -2,8 +2,8 @@ import Image from "next/image";
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import LightBox from "components/LightBox";
-import { Footer8 } from "components/blocks/footer";
-import Navbar from "components/blocks/navbar/navbar-1";
+import { Footer11 } from "components/blocks/footer";
+import NavbarLanding from "components/blocks/navbar/navbar-1/navbarLanding";
 import FigureImage from "components/reuseable/FigureImage";
 import NextLink from "components/reuseable/links/NextLink";
 import ProjectDetailsContent from "components/common/ProjectDetailsContent";
@@ -19,10 +19,9 @@ export default function ProjectDetails() {
 
       {/* ========== header section ========== */}
       <header className="wrapper bg-soft-primary">
-        <Navbar
-          language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
-        />
+        <NavbarLanding
+          navClassName="navbar navbar-expand-lg center-nav navbar-light navbar-bg-light"
+        />  
       </header>
 
       <main className="content-wrapper">
@@ -98,7 +97,7 @@ export default function ProjectDetails() {
       </main>
 
       {/* ========== footer section ========== */}
-      <Footer8 />
+      <Footer11 />
     </Fragment>
   );
 }

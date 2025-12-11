@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import Tooltip from "components/Tooltip";
-import Navbar from "components/blocks/navbar/navbar-1";
-import { Footer8 } from "components/blocks/footer";
+import NavbarLanding from "components/blocks/navbar/navbar-1/navbarLanding";
+import { Footer11 } from "components/blocks/footer";
 import NextLink from "components/reuseable/links/NextLink";
 import { ProjectCard1 } from "components/reuseable/project-cards";
 // CUSTOM DATA
@@ -16,11 +16,9 @@ export default function Projects() {
 
       {/* ========== header section ========== */}
       <header className="wrapper bg-gray">
-        <Navbar
-          language
+        <NavbarLanding
           navClassName="navbar navbar-expand-lg center-nav navbar-light navbar-bg-light"
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
-        />
+          />
       </header>
 
       <main className="content-wrapper">
@@ -54,7 +52,7 @@ export default function Projects() {
       </main>
 
       {/* ========== footer section ========== */}
-      <Footer8 />
+      <Footer11 />
     </Fragment>
   );
 }

@@ -2,8 +2,8 @@
 
 import { Fragment } from "react";
 // -------- CUSTOM COMPONENTS -------- //
-import { Footer8 } from "components/blocks/footer";
-import Navbar from "components/blocks/navbar/navbar-1";
+import { Footer11 } from "components/blocks/footer";
+import NavbarLanding from "components/blocks/navbar/navbar-1/navbarLanding";
 import FigureImage from "components/reuseable/FigureImage";
 import NextLink from "components/reuseable/links/NextLink";
 
@@ -19,10 +19,9 @@ export default function NotFound({ error, reset }: Props) {
     <Fragment>
       {/* ========== header section ========== */}
       <header className="wrapper bg-light">
-        <Navbar
-          language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
-        />
+        <NavbarLanding
+          navClassName="navbar navbar-expand-lg center-nav navbar-light navbar-bg-light"
+        />  
       </header>
 
       <main className="content-wrapper">
@@ -48,7 +47,7 @@ export default function NotFound({ error, reset }: Props) {
       </main>
 
       {/* ========== footer section ========== */}
-      <Footer8 />
+      <Footer11 />
     </Fragment>
   );
 }
