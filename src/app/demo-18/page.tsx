@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
-import Navbar from "components/blocks/navbar/navbar-1";
 import { Blog4 } from "components/blocks/blog";
 import { Hero18 } from "components/blocks/hero";
 import { Footer11 } from "components/blocks/footer";
