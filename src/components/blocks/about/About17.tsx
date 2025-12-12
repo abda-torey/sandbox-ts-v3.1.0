@@ -4,7 +4,7 @@ import { aboutList1 } from "data/about";
 
 export default function About17() {
   return (
-    <div className="row gx-3 gy-10 mb-15 mb-md-18 align-items-center">
+    <div className="row gx-3 gy-10 mb-15 mb-md-18 align-items-center" id="aboutus">
       <div className="col-lg-5 offset-lg-1">
         <figure>
           <img className="w-auto" src="/img/illustrations/3d2.png" srcSet="/img/illustrations/3d2@2x.png 2x" alt="" />

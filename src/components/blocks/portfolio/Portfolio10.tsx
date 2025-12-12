@@ -9,7 +9,7 @@ import { portfolioList6 } from "data/portfolio";
 export default function Portfolio10() {
   return (
     <Fragment>
-      <div className="row mt-17">
+      <div className="row mt-17" id ="portfolio">
         <div className="col-lg-10 col-xl-9 col-xxl-8 mx-auto text-center">
           <h2 className="fs-16 text-uppercase text-muted mb-3">Latest Projects</h2>
           <h3 className="display-3 mb-10">

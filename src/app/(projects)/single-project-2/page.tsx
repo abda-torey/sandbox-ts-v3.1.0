@@ -1,37 +1,33 @@
-import Image from "next/image";
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import { Footer11 } from "components/blocks/footer";
-import Carousel from "components/reuseable/Carousel";
+import FigureImage from "components/reuseable/FigureImage";
 import NextLink from "components/reuseable/links/NextLink";
-import ProjectDetailsContent from "components/common/ProjectDetailsContent";
-import ProjectDetailsNavigation from "components/common/ProjectDetailsNavigation";
 import NavbarLanding from "components/blocks/navbar/navbar-1/navbarLanding";
 
-export default function ProjectDetails() {
+export default function ProjectDetails2() {
   return (
     <Fragment>
-      {/* ========== header section ========== */}
-      <header className="wrapper bg-light">
-        <NavbarLanding
-          navClassName="navbar navbar-expand-lg center-nav navbar-light navbar-bg-light"
-        />  
+      <header className="wrapper bg-soft-primary">
+        <NavbarLanding navClassName="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none" />
       </header>
 
       <main className="content-wrapper">
-        {/* ========== heading section ========== */}
-        <section className="wrapper bg-light">
-          <div className="container pt-10 pb-9 pt-md-14 pb-md-11 text-center">
+        <section className="wrapper bg-soft-primary">
+          <div className="container pt-10 pb-19 pt-md-14 pb-md-22 text-center">
             <div className="row">
               <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <div className="post-header">
                   <div className="post-category text-line">
-                    <NextLink title="Identity" href="#" className="hover" />
+                    <span className="text-uppercase text-muted">Retail Analytics</span>
                   </div>
 
-                  <h1 className="display-1 mb-3">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>
+                  <h1 className="display-1 mb-3">
+                    Sales Forecasting Dashboard for a Major U.S. Retailer
+                  </h1>
                   <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">
-                    Integer posuere erat a ante venenatis dapibus posuere. Maecenas faucibus mollis interdum.
+                    Designed and deployed Power BI dashboards integrating Azure Synapse data pipelines to enhance
+                    sales forecasting accuracy and performance insights across hundreds of stores.
                   </p>
                 </div>
               </div>
@@ -41,57 +37,49 @@ export default function ProjectDetails() {
 
         <section className="wrapper bg-light wrapper-border">
           <div className="container pb-14 pb-md-16">
-            <article>
-              <div className="post-slider mb-8 mb-md-12">
-                <div className="swiper-container dots-over">
-                  <Carousel
-                    grabCursor
-                    autoHeight
-                    spaceBetween={5}
-                    slidesPerView={1}
-                    slideClassName="rounded overflow-hidden">
-                    <div>
-                      <Image alt="demo" width={1600} height={912} src="/img/photos/pp7.jpg" className="w-100 h-auto" />
-                      <div className="caption-wrapper p-12">
-                        <div className="caption bg-white rounded px-4 py-3 ms-auto mt-auto animate__animated animate__slideInDown animate__delay-1s">
-                          <h5 className="mb-0">Vivamus sagittis lacus augue</h5>
-                        </div>
-                      </div>
-                    </div>
+            <div className="row">
+              <div className="col-12">
+                <article className="mt-n21 text-center">
+                  <div className="mx-auto" style={{ maxWidth: "900px" }}>
+                    <FigureImage
+                      width={400}
+                      height={240}
+                      src="/img/photos/myb4.jpg"
+                      className="rounded mb-10 shadow-lg"
+                    />
+                  </div>
 
-                    <div>
-                      <Image width={1600} height={1011} src="/img/photos/pp8.jpg" alt="demo" className="w-100 h-auto" />
-                      <div className="caption-wrapper p-12">
-                        <div className="caption bg-white rounded px-4 py-3 mx-auto mt-auto animate__animated animate__slideInDown animate__delay-1s">
-                          <h5 className="mb-0">Vivamus sagittis lacus augue</h5>
-                        </div>
-                      </div>
-                    </div>
+                  <div className="col-md-10 offset-md-1 text-justify">
+                    <h2 className="mb-4 text-center">Project Overview</h2>
+                    <p>
+                      The client needed a unified analytics layer for daily and weekly sales performance, segmented by
+                      region, store, and product category. We implemented Azure Synapse pipelines and Power BI models
+                      that automated data ingestion, transformation, and reporting.
+                    </p>
 
-                    <div>
-                      <Image width={1600} height={980} src="/img/photos/pp9.jpg" alt="demo" className="w-100 h-auto" />
-                      <div className="caption-wrapper p-12">
-                        <div className="caption bg-white rounded px-4 py-3 mt-auto animate__animated animate__slideInDown animate__delay-1s">
-                          <h5 className="mb-0">Vivamus sagittis lacus augue</h5>
-                        </div>
-                      </div>
-                    </div>
-                  </Carousel>
-                </div>
+                    <h2 className="mt-6 mb-4 text-center">Key Outcomes</h2>
+                    <ul
+                      style={{
+                        paddingLeft: "1.2rem",
+                        marginBottom: "1.5rem",
+                        listStylePosition: "inside"
+                      }}
+                    >
+                      <li>Improved forecasting accuracy and demand planning.</li>
+                      <li>Self-service analytics for merchandisers and regional leaders.</li>
+                      <li>Faster decision-making using near real-time sales data.</li>
+                    </ul>
+                  </div>
+                </article>
               </div>
-
-              {/* ========== details section ========== */}
-              <ProjectDetailsContent title="About the Project" />
-            </article>
+            </div>
           </div>
         </section>
-
-        {/* ========== navigation section ========== */}
-        <ProjectDetailsNavigation />
       </main>
 
-      {/* ========== footer section ========== */}
       <Footer11 />
     </Fragment>
   );
 }
+
+

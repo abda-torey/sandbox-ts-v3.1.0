@@ -1,38 +1,33 @@
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import { Footer11 } from "components/blocks/footer";
-import NavbarLanding from "components/blocks/navbar/navbar-1/navbarLanding";
-// import { Portfolio1 } from "components/blocks/portfolio";
+import FigureImage from "components/reuseable/FigureImage";
 import NextLink from "components/reuseable/links/NextLink";
-import ProjectDetailsContent from "components/common/ProjectDetailsContent";
-import ProjectDetailsNavigation from "components/common/ProjectDetailsNavigation";
+import NavbarLanding from "components/blocks/navbar/navbar-1/navbarLanding";
 
-export default function ProjectDetails() {
+export default function ProjectDetails3() {
   return (
     <Fragment>
-      {/* ========== header section ========== */}
       <header className="wrapper bg-soft-primary">
-        <NavbarLanding
-          navClassName="navbar navbar-expand-lg center-nav navbar-light navbar-bg-light"
-        />  
+        <NavbarLanding navClassName="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none" />
       </header>
 
       <main className="content-wrapper">
-        {/* ========== heading section ========== */}
-        <section
-          className="wrapper image-wrapper bg-image bg-overlay text-white"
-          style={{ backgroundImage: "url(/img/photos/bg6.jpg)" }}>
-          <div className="container pt-17 pb-12 pt-md-19 pb-md-16 text-center">
+        <section className="wrapper bg-soft-primary">
+          <div className="container pt-10 pb-19 pt-md-14 pb-md-22 text-center">
             <div className="row">
               <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <div className="post-header">
-                  <div className="post-category text-line text-white">
-                    <NextLink title="Identity" href="#" className="text-reset" />
+                  <div className="post-category text-line">
+                    <span className="text-uppercase text-muted">Healthcare Data Integration</span>
                   </div>
 
-                  <h1 className="display-1 mb-3 text-white">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>
+                  <h1 className="display-1 mb-3">
+                    Data Warehouse Modernization for a Healthcare Tech Company
+                  </h1>
                   <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">
-                    Integer posuere erat a ante venenatis dapibus posuere. Maecenas faucibus mollis interdum.
+                    Migrated legacy SQL Server data flows to Azure Data Factory and modernized the enterprise data
+                    warehouse, improving reliability and time-to-insight for clinical analytics.
                   </p>
                 </div>
               </div>
@@ -41,21 +36,50 @@ export default function ProjectDetails() {
         </section>
 
         <section className="wrapper bg-light wrapper-border">
-          {/* ========== details section ========== */}
-          <div className="container pt-14 pt-md-16 pb-13 pb-md-15">
-            <ProjectDetailsContent title="About the Project" />
+          <div className="container pb-14 pb-md-16">
+            <div className="row">
+              <div className="col-12">
+                <article className="mt-n21 text-center">
+                  <div className="mx-auto" style={{ maxWidth: "900px" }}>
+                    <FigureImage
+                      width={400}
+                      height={240}
+                      src="/img/photos/datawarehousemodernization.jpg"
+                      className="rounded mb-10 shadow-lg"
+                    />
+                  </div>
+
+                  <div className="col-md-10 offset-md-1 text-justify">
+                    <h2 className="mb-4 text-center">Project Overview</h2>
+                    <p>
+                      We re-architected the client&apos;s data platform to use Azure Data Factory, Azure SQL, and
+                      Power BI, replacing fragile SSIS packages and manual processes with robust, parameterized
+                      pipelines and reusable data models.
+                    </p>
+
+                    <h2 className="mt-6 mb-4 text-center">Key Outcomes</h2>
+                    <ul
+                      style={{
+                        paddingLeft: "1.2rem",
+                        marginBottom: "1.5rem",
+                        listStylePosition: "inside"
+                      }}
+                    >
+                      <li>Reduced ETL failures and re-runs through centralized orchestration.</li>
+                      <li>Improved data quality and lineage for regulatory reporting.</li>
+                      <li>Enabled self-service analytics for analysts and product teams.</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </div>
           </div>
-
-          {/* ========== portfolio section ========== */}
-          {/* <Portfolio1 /> */}
         </section>
-
-        {/* ========== navigation section ========== */}
-        <ProjectDetailsNavigation />
       </main>
 
-      {/* ========== footer section ========== */}
       <Footer11 />
     </Fragment>
   );
 }
+
+
