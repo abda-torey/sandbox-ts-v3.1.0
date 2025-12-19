@@ -28,8 +28,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Sandbox - Modern & Multipurpose NextJS Template",
-  description: "Sandbox is a beautiful and flawless site template."
+  title: "BluePeakData - Data Solutions for a Data-Driven World",
+  description: "Data Solutions for a Data-Driven World.",
+  icons: "/img/favicon.png"
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
